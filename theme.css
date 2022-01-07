@@ -6,7 +6,6 @@ body {
 
 .back {
   background-color: #ffffff;
-  position: absolute;
   margin: 0px 111px 0px 126px;
 }
 
@@ -16,7 +15,9 @@ body {
   color: #000000;
   border: 0px solid #000000;
   text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
-  margin: 97px 655px 21px 79px;
+  padding-top: 97px;
+  margin-left: 79px;
+  margin-bottom: 21px;
 }
 
 #menu {
@@ -59,6 +60,17 @@ a {
   color: #000000;
 }
 
+.bloklar {
+  display: flex;
+  flex-direction: column;
+  padding-left: 79px;
+  width: 905px;
+}
+
+.icerik {
+  display: flex;
+}
+
 #anablok {
   width: 573px;
   height: 200px;
@@ -67,36 +79,36 @@ a {
   margin-left: 45.56px;
 }
 
-#blok {
+.blok {
   display: flex;
   width: 902px;
   height: 200px;
-  left: 205px;
-  top: 312px;
-  margin: 63px 295px 0px 79px;
+  margin-top: 63px;
 }
 .anapics {
-  width: 200px;
-  left: 1028px;
-  top: 312px;
-  position: absolute;
+  width: 168px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 .pics {
   color: #000000;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
+}
+.mKutular {
   display: flex;
-  position: relative;
-  left: 30px;
+  flex-wrap: wrap;
 }
 .mkutu {
   width: 76px;
   height: 76px;
   background: #c4c4c4;
   border-radius: 10px;
-  margin: 8px;
+  margin-bottom: 8px;
+}
+.mkutu:nth-child(2n-1) {
+  margin-right: 8px;
 }
 
 .kutu {
@@ -140,20 +152,20 @@ a {
   width: 900px;
   height: 0px;
   border: 1px solid #c4c4c4;
-  margin: 42px 295px 0px 79px;
+  margin: 42px 295px 0px 0px;
 }
 
 #foother {
-  width: 1276px;
-  height: 66px;
   background: #f5c852;
   margin-top: 332px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .follow {
-  position: absolute;
-  left: 79px;
-  top: 1810px;
+  margin-left: 30px;
+  margin-top: 14px;
 }
 
 .inst {
@@ -168,8 +180,15 @@ a {
 }
 
 .dpnt {
+  display: flex;
+  flex-direction: row;
+  margin-top: 14px;
+  margin-right: 50px;
+  height: 40px;
+}
+
+.adpnt {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
-  padding: 15px 0px 14px 856px;
 }
